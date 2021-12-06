@@ -1,8 +1,8 @@
-package ca.sharipov.kotlinweather.data.model.weather
+package ca.sharipov.kotlinweather.data.model.common
 
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Rain(
+data class Snow(
     val `1h`: Double
 )

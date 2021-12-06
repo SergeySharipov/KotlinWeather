@@ -1,4 +1,4 @@
-package ca.sharipov.kotlinweather.data.model.onecall
+package ca.sharipov.kotlinweather.data.model.common
 
 import kotlinx.serialization.Serializable
 

@@ -5,6 +5,8 @@ import ca.sharipov.kotlinweather.BuildConfig
 import ca.sharipov.kotlinweather.data.DefaultMainRepository
 import ca.sharipov.kotlinweather.data.MainRepository
 import ca.sharipov.kotlinweather.data.remote.WeatherApi
+import ca.sharipov.kotlinweather.util.Constants.BASE_URL
+import ca.sharipov.kotlinweather.util.Constants.TIME_OUT
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -19,9 +21,6 @@ import io.ktor.client.features.observer.*
 import io.ktor.client.request.*
 import io.ktor.http.*
 import javax.inject.Singleton
-
-private const val TIME_OUT = 60_000
-private const val BASE_URL = "https://api.openweathermap.org"
 
 @Module
 @InstallIn(SingletonComponent::class)
